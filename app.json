@@ -1,0 +1,55 @@
+{
+  "expo": {
+    "name": "Poultry Farm",
+    "slug": "poultry",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "scheme": "poultry",
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#FDF8F3"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.poultry.farm",
+      "buildNumber": "1",
+      "infoPlist": {
+        "NSCameraUsageDescription": "Allow Poultry Farm to access your camera to take photos of your birds and farm.",
+        "NSPhotoLibraryUsageDescription": "Allow Poultry Farm to access your photos to upload images of your birds and farm."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#FDF8F3"
+      },
+      "edgeToEdgeEnabled": true,
+      "package": "com.poultry.farm",
+      "versionCode": 1,
+      "permissions": [
+        "CAMERA",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png",
+      "bundler": "metro"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "YOUR_EAS_PROJECT_ID"
+      }
+    },
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/YOUR_EAS_PROJECT_ID"
+    }
+  }
+}
